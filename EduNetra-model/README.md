@@ -37,7 +37,7 @@ edunetra-ml/
 │   └── settings.py
 ├── src/
 │   ├── genai/              # Generative AI Logic
-│   │   └── coach.py        # ShikshaCoach Class
+│   │   └── coach.py        # EduCoach Class
 │   ├── processors/         # Signal Processing Modules
 │   │   ├── audio_analyzer.py
 │   │   ├── text_analyzer.py
