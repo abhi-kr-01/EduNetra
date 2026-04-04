@@ -113,7 +113,7 @@ export function Navbar() {
                 SN
               </div>
               <span className="text-lg font-semibold tracking-tight text-slate-900">
-                <span className="text-primary-600">Shiksha</span>Netra
+                <span className="text-primary-600">Edu</span>Netra
               </span>
             </Link>
           </div>

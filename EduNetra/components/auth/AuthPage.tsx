@@ -95,7 +95,7 @@ export function AuthPage({ initialMode = "login" }: AuthPageProps) {
                         <div className="mx-auto h-16 w-16 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6 shadow-xl border border-white/10">
                             <Users className="h-8 w-8 text-indigo-400" />
                         </div>
-                        <h2 className="text-3xl font-bold tracking-tight">Join ShikshaNetra</h2>
+                        <h2 className="text-3xl font-bold tracking-tight">Join EduNetra</h2>
                         <p className="text-slate-300 text-lg">
                            Start your journey with us today and evaluate mentors efficiently
                         </p>

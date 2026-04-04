@@ -20,7 +20,7 @@
         ▼                                   ▼
 ┌──────────────────┐              ┌──────────────────┐
 │  Upload Video    │              │  Send to ML      │
-│  to Supabase     │  (Parallel)  │  Model (Gradio)  │
+│  to Cloudinary   │  (Parallel)  │  Model (Gradio)  │
 │  Status:         │              │  Status:         │
 │  uploading (5%)  │              │  analyzing (30%) │
 └────────┬─────────┘              └────────┬─────────┘
