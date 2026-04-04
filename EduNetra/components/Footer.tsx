@@ -63,7 +63,7 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-slate-200 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>© 2026 EduNetra. All rights reserved.</p>
           <p className="flex items-center gap-1">
-             Made with <Heart className="h-3 w-3 text-red-500 fill-current" /> by Team EduNetra at IIIT Jabalpur
+             Made with <Heart className="h-3 w-3 text-red-500 fill-current" /> by Team Puran Poli at IIIT Jabalpur
           </p>
         </div>
       </div>
