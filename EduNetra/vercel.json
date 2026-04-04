@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "app/api/analyze/route.ts": {
+      "maxDuration": 300,
+      "memory": 1024
+    },
+    "app/api/jobs/restart/route.ts": {
+      "maxDuration": 300,
+      "memory": 1024
+    }
+  },
+  "regions": ["iad1"]
+}

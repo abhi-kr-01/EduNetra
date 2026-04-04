@@ -1,0 +1,15 @@
+name: Restart Incomplete Jobs
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"   # every 10 minutes
+  workflow_dispatch:        # manual trigger
+
+jobs:
+  restart:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call restart endpoint
+        run: |
+          curl -X POST "${{ secrets.APP_URL }}/api/jobs/restart" \
+            -H "x-service-key: ${{ secrets.INTERNAL_SERVICE_KEY }}"
