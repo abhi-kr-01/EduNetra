@@ -226,7 +226,7 @@ export default function HomePage() {
                      Evaluation That Is Fair, Not Biased
                   </h2>
                   <p className="text-lg text-slate-400 mb-8 leading-relaxed">
-                     Traditional evaluation is subjective. ShikshaNetra uses standardized signals tuned to reduce bias, ensuring every educator gets a fair assessment regardless of accent or background.
+                     Traditional evaluation is subjective. EduNetra uses standardized signals tuned to reduce bias, ensuring every educator gets a fair assessment regardless of accent or background.
                   </p>
                   
                   <ul className="space-y-4">
@@ -246,7 +246,7 @@ export default function HomePage() {
                        <p className="text-sm text-slate-400">Varries by reviewer mood and bias.</p>
                    </Card>
                    <Card className="bg-emerald-900/20 border-emerald-500/30 p-6">
-                       <h4 className="text-white font-bold text-lg mb-2">ShikshaNetra</h4>
+                       <h4 className="text-white font-bold text-lg mb-2">EduNetra</h4>
                        <div className="flex gap-2 mb-4">
                           <div className="h-2 w-full bg-emerald-500/20 rounded-full"></div>
                           <div className="h-2 w-3/4 bg-emerald-500 rounded-full"></div>

@@ -8,9 +8,9 @@ import { GoogleAuthWrapper } from "@/components/GoogleAuthWrapper";
 import NextTopLoader from "nextjs-toploader";
 
 export const metadata: Metadata = {
-  title: "ShikshaNetra – AI Mentor Evaluation",
+  title: "EduNetra – AI Mentor Evaluation",
   description:
-    "ShikshaNetra is an AI-powered mentor evaluation platform analyzing teaching sessions with multimodal signals and generative feedback."
+    "EduNetra is an AI-powered mentor evaluation platform analyzing teaching sessions with multimodal signals and generative feedback."
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

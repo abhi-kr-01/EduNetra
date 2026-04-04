@@ -70,7 +70,7 @@ export function RegisterForm({ className }: RegisterFormProps) {
     <form onSubmit={handleSubmit} className={cn("w-full max-w-sm space-y-5 px-8 py-10", className)}>
         <div className="text-center">
             <h1 className="text-3xl font-bold text-slate-900">Create Account</h1>
-            <p className="mt-2 text-sm text-slate-600">Join ShikshaNetra today</p>
+            <p className="mt-2 text-sm text-slate-600">Join EduNetra today</p>
         </div>
 
         <GoogleAuthButton mode="signup" />

@@ -1,7 +1,7 @@
 # Institution Frontend Implementation
 
 ## Overview
-This document describes the institution management features added to ShikshaNetra. Institution admins can now sign up, manage teachers, view teacher profiles, and perform all standard operations like uploading videos and viewing analysis history.
+This document describes the institution management features added to EduNetra. Institution admins can now sign up, manage teachers, view teacher profiles, and perform all standard operations like uploading videos and viewing analysis history.
 
 ## Features Implemented
 

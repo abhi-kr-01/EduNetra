@@ -11,7 +11,7 @@ export function Footer() {
           <div className="col-span-2 lg:col-span-2">
             <Link href="/" className="inline-block">
                <span className="text-2xl font-bold bg-gradient-to-r from-primary-600 to-indigo-600 bg-clip-text text-transparent">
-                  ShikshaNetra
+                  EduNetra
                </span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-slate-500 max-w-xs">
@@ -61,9 +61,9 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-slate-200 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>© 2025 ShikshaNetra. All rights reserved.</p>
+          <p>© 2026 EduNetra. All rights reserved.</p>
           <p className="flex items-center gap-1">
-             Made with <Heart className="h-3 w-3 text-red-500 fill-current" /> by Team ShikshaNetra at IIT Bombay
+             Made with <Heart className="h-3 w-3 text-red-500 fill-current" /> by Team EduNetra at IIIT Jabalpur
           </p>
         </div>
       </div>
