@@ -1,6 +1,6 @@
 ﻿<div align="center">
 
-# 🎓 ShikshaNetra
+# 🎓 EduNetra
 
 AI-powered pedagogical analysis platform for teaching session videos.
 
@@ -9,14 +9,14 @@ AI-powered pedagogical analysis platform for teaching session videos.
 <img alt="Tailwind" src="https://img.shields.io/badge/TailwindCSS-3.x-38b2ac?logo=tailwindcss" />
 <img alt="MongoDB" src="https://img.shields.io/badge/MongoDB-Atlas-47A248?logo=mongodb" />
 <img alt="Cloudinary" src="https://img.shields.io/badge/Cloudinary-Uploads-1C9CEA?logo=cloudinary" />
-<a href="https://huggingface.co/spaces/genathon00/sikshanetra-model"><img alt="HF Space" src="https://img.shields.io/badge/Hugging%20Face-Model%20Space-blue?logo=huggingface" /></a>
+
 
 </div>
 
 ---
 
 ## 🌟 Overview
-ShikshaNetra analyzes audio, video, and text to deliver actionable insights on clarity, confidence, engagement, technical depth, and interaction quality. Direct Cloudinary uploads keep videos secure while reducing backend load.
+EduNetra analyzes audio, video, and text to deliver actionable insights on clarity, confidence, engagement, technical depth, and interaction quality. Direct Cloudinary uploads keep videos secure while reducing backend load.
 
 ## 🚀 Features
 
@@ -75,8 +75,8 @@ Before you begin, ensure you have the following installed:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/asminity/ShikshaNetra.git
-cd ShikshaNetra
+git clone https://github.com/asminity/EduNetra.git
+cd EduNetra
 ```
 
 ### 2. Install Dependencies
@@ -110,7 +110,7 @@ NODE_ENV=development
 
 # Cloudinary Configuration (client-side upload)
 NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=your-cloud-name
-NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET=Shikshanetra
+NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET=EduNetra
 NEXT_PUBLIC_CLOUDINARY_UPLOAD_FOLDER=video
 ```
 
@@ -126,7 +126,7 @@ curl -X POST http://localhost:3000/api/db/init \
 ### 5. Cloudinary Upload Setup
 
 1. Create a Cloudinary account and grab your **cloud name**.
-2. Create an **unsigned upload preset** named `Shikshanetra`.
+2. Create an **unsigned upload preset** named `EduNetra`.
 3. Set the preset to use folder `video` (resource type: video). No API keys are needed client-side for unsigned uploads.
 4. Add the Cloudinary variables to `.env.local` as shown above.
 
@@ -193,7 +193,7 @@ Response includes transcript, scores, and coach_feedback JSON.
 ## 🏗️ Project Structure
 
 ```
-ShikshaNetra/
+EduNetra/
 ├── app/
 │   ├── api/                    # API routes
 │   │   ├── auth/              # Authentication endpoints
@@ -351,15 +351,7 @@ This project is licensed under the MIT License.
 
 ## 👥 Team
 
-ShikshaNetra - AI-Powered Teaching Analytics Platform
-
-Om Jha(Backend, AI Developer & Integration)
-
-Vikas Saini(Frontend & UI/UX Developer)
-
-Mudit Chorausiya(Research Lead)
-
-Asmit Yadav(AI & Model Development)
+EduNetra - AI-Powered Teaching Analytics Platform
 
 ## 📞 Support
 

@@ -1,4 +1,4 @@
-# Shiksha Netra ML API
+# EduNetra ML API
 
 ## Quick Start
 
@@ -174,7 +174,7 @@ import json
 
 def analyze_teaching_video(video_url, topic="General"):
     """
-    Analyze a teaching video from Supabase URL using the Shiksha Netra API
+    Analyze a teaching video from Supabase URL using the  EduNetra API
     """
     url = "http://localhost:8000/analyze"
     
@@ -228,8 +228,8 @@ CMD ["python", "api.py"]
 Build and run:
 
 ```bash
-docker build -t shiksha-netra-ml .
-docker run -p 3000:3000 shiksha-netra-ml
+docker build -t EduNetra-ml .
+docker run -p 3000:3000 EduNetra-ml
 ```
 
 ---

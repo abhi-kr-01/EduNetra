@@ -23,7 +23,7 @@ class ShikshaCoach:
 
     def _get_system_instruction(self):
         return (
-            "You are an expert Pedagogical Coach and Technical Auditor for Shiksha Netra. "
+            "You are an expert Pedagogical Coach and Technical Auditor for EduNetra. "
             "Your goal is to evaluate a teacher based on their session transcript and computed AI scores."
         )
 
@@ -84,7 +84,7 @@ class ShikshaCoach:
             return "I'm sorry, I cannot answer that right now because my brain (LLM) is not connected."
 
         prompt = f"""
-        You are the Shiksha Netra Pedagogical Coach. Use the following context to answer the user's question.
+        You are the EduNetra Pedagogical Coach. Use the following context to answer the user's question.
         
         **Context (Previous Analysis & Transcript):**
         {json.dumps(context_history) if isinstance(context_history, dict) else context_history}

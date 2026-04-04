@@ -13,7 +13,7 @@ Videos uploaded through the demo form are now stored in Supabase Storage and fet
 2. Sign up or log in to your account
 3. Click "New Project"
 4. Fill in project details:
-   - **Project Name**: ShikshaNetra (or your preferred name)
+   - **Project Name**: EduNetra (or your preferred name)
    - **Database Password**: Create a strong password
    - **Region**: Choose closest to your users
 5. Wait for project initialization (~2 minutes)

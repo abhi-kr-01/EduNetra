@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: shiksha-netra-ml
+    name: EduNetra-ml
     runtime: docker
     region: oregon
     plan: free

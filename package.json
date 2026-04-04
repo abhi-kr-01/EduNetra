@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "@gradio/client": "^2.1.0",
+    "@react-oauth/google": "^0.13.4",
+    "@supabase/supabase-js": "^2.101.1",
+    "bcryptjs": "^3.0.3",
+    "chart.js": "^4.5.1",
+    "clsx": "^2.1.1",
+    "google-auth-library": "^10.6.2",
+    "jsonwebtoken": "^9.0.3",
+    "lucide-react": "^1.7.0",
+    "mongodb": "^7.1.1",
+    "nextjs-toploader": "^3.9.17",
+    "react-chartjs-2": "^5.3.1",
+    "tailwind-merge": "^3.5.0"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^25.5.2",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.4.27",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.2.2",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.2",
+    "typescript": "^6.0.2"
+  }
+}
