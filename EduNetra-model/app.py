@@ -78,8 +78,8 @@ def analyze_session(video, topic, api_key):
         return f"An error occurred: {str(e)}", "", "", None
 
 # Define Interface
-with gr.Blocks(title="Shiksha Netra - AI Pedagogical Coach") as demo:
-    gr.Markdown("# 🎓 Shiksha Netra - AI Pedagogical Coach")
+with gr.Blocks(title="EduNetra - AI Pedagogical Coach") as demo:
+    gr.Markdown("# 🎓 EduNetra - AI Pedagogical Coach")
     gr.Markdown("Upload a teaching session video to get comprehensive AI feedback.")
     
     with gr.Row():

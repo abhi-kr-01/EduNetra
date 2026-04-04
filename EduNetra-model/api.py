@@ -1,5 +1,5 @@
 """
-FastAPI Backend API for Shiksha Netra ML Microservice
+FastAPI Backend API for EduNetra ML Microservice
 Exposes video analysis endpoints at port 3000
 """
 
@@ -16,7 +16,7 @@ from src.pipeline import process_session
 
 # Initialize FastAPI app
 app = FastAPI(
-    title="Shiksha Netra ML API",
+    title="EduNetra ML API",
     root_path="/api",
     description="AI-powered pedagogical analysis microservice for teaching sessions",
     version="1.0.0"
@@ -241,7 +241,7 @@ async def api_info():
 # Run the server
 if __name__ == "__main__":
     print("=" * 60)
-    print("🎓 Shiksha Netra ML API Starting...")
+    print("🎓 EduNetra ML API Starting...")
     print("=" * 60)
     print(f"Server running at: http://localhost:8000")
     print(f"API Documentation: http://localhost:8000/docs")

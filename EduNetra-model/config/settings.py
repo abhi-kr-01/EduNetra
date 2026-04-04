@@ -1,4 +1,4 @@
-# Configuration settings for Shiksha Netra
+# Configuration settings for EduNetra
 
 # Audio Analysis Constants
 SAMPLE_RATE = 22050
