@@ -1,8 +1,8 @@
-# 🔗 ShikshaNetra Backend API Integration
+# 🔗 EduNetra Backend API Integration
 
 ## 🌟 Overview
 
-The ShikshaNetra backend integrates with the ML microservice running on port 8000 to provide video analysis capabilities for teaching sessions.
+The EduNetra backend integrates with the ML microservice running on port 8000 to provide video analysis capabilities for teaching sessions.
 
 ## 🧱 Architecture
 

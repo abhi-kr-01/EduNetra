@@ -21,3 +21,4 @@ openai-whisper
 torchvision
 facenet-pytorch
 gradio
+yt-dlp

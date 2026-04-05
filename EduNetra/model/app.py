@@ -1,15 +1,77 @@
 import gradio as gr
+from dotenv import load_dotenv
+from flask_cors import CORS
 import os
 import json
 from flask import Flask, request, jsonify
 from src.pipeline import process_session
+from src.processors.link_handler import get_video_from_url
 from src.genai.coach import ShikshaCoach
+
+
+load_dotenv()
 
 # Initialize Flask app for API endpoints
 flask_app = Flask(__name__)
 
+CORS(flask_app)
+
 # Initialize the coach
 coach = ShikshaCoach()
+
+@flask_app.route("/analyze_from_url", methods=["POST"])
+def analyze_from_url():
+    """
+    API endpoint to analyze a video from a URL.
+    Expects: { "url": "https://youtube.com/..." }
+    Returns: JSON report object
+    """
+    video_path = None
+    try:
+        data = request.get_json()
+
+        if not data or "url" not in data:
+            return jsonify({"error": "Missing 'url' in request body"}), 400
+
+        url = data["url"]
+        topic = data.get("topic", "General")
+
+        if "GEMINI_API_KEY" not in os.environ:
+            return jsonify({"error": "GEMINI_API_KEY not set"}), 500
+
+        # Step 1: Download video
+        print(f"[API] Downloading video from: {url}")
+        video_path = get_video_from_url(url)
+
+        if not video_path:
+            return jsonify({"error": "Failed to download video. Check if the URL is valid and public."}), 400
+
+        # Step 2: Run through the pipeline
+        print(f"[API] Running pipeline on: {video_path}")
+        report = process_session(video_path, topic_name=topic)
+
+        if not report:
+            return jsonify({"error": "Pipeline analysis failed."}), 500
+
+        return jsonify(report), 200
+
+    except Exception as e:
+        return jsonify({
+            "error": "Something went wrong",
+            "details": str(e)
+        }), 500
+
+    finally:
+        if video_path and os.path.exists(video_path):
+            try:
+                import time
+                time.sleep(2)
+                os.remove(video_path)
+                print(f"[CLEANUP] Deleted temp file: {video_path}")
+            except Exception as e:
+                print(f"[CLEANUP] Failed to delete temp file: {e}")
+
+
 
 @flask_app.route("/generate_genai_feedback", methods=["POST"])
 def generate_genai_feedback():

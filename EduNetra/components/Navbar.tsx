@@ -80,6 +80,7 @@ export function Navbar() {
     // Default links for mentors/coordinators
     return [
       { href: "/upload", label: "Upload" },
+      { href: "/upload_link", label: "Analyze Link" },
       { href: "/dashboard", label: "Dashboard" },
       { href: "/history", label: "History" },
       { href: "/insights", label: "Insights" },
